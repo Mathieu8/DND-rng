@@ -4,7 +4,7 @@ public class Calander {
 	int year = 0;
 	int day = 0;
 	int daysFromYearZero = year * 360 + day;
-	Moons moons = new Moons(this);
+	Moons fire = new Moons("fire", 14, daysFromYearZero, this);
 
 	public int getDaysFromYearZero() {
 		// TODO Auto-generated method stub
@@ -12,7 +12,7 @@ public class Calander {
 	}
 
 	public void newDay(int i) {
-		moons.newDay(i);
+		fire.newDay(i);
 		day = day + i;
 		while (day > 360) {
 			day = day - 360;

@@ -1,6 +1,6 @@
 package calander;
 
-public class Moons {
+public class Moon {
 	Calander c;
 	int periodN = 746130;
 	int periodP = 33; // 3 11
@@ -12,8 +12,10 @@ public class Moons {
 
 	int phase;
 	String p;
+	private String name;
 
-	public Moons(int period, int daysFromyearZero, Calander c) {
+	public Moon(String name, int period, int daysFromyearZero, Calander c) {
+		this.name = name;
 		this.c = c;
 		this.period = period;
 		phase = c.getDaysFromYearZero() % period;
@@ -44,7 +46,7 @@ public class Moons {
 	}
 
 	public void printMoon() {
-		System.out.print("negative moon is");
+		System.out.print(name + "moon is " + p);
 		System.out.println();
 	}
 

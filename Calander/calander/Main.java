@@ -7,7 +7,7 @@ public class Main {
 		for (int i = 0; i < 100; i++) {
 			c.newDay(1);
 			System.out.print("Day = " + c.getDaysFromYearZero() + " ");
-			c.moons.printMoonF();
+			c.fire.printMoon();
 		}
 		// TODO Auto-generated method stub
 
